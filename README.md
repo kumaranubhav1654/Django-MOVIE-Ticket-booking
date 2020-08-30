@@ -6,12 +6,12 @@ Django based web app which implements ticket booking for multiple movies, update
 ![](Snapshot/user_info.png)
 ![](Snapshot/Tickets.png)
 
-##HOME PAGE of our website:
+## HOME PAGE of our website:
 ![](Snapshot/HOME.png)
 
 
 
-##Installation Pre-requisites:
+## Installation Pre-requisites:
 
 django
 djangorestframework
