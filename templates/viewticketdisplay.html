@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor=#69F0AE>
+    {% for i in obj %}
+    <div id="movies"></div>
+        <div id="name"><h1>Name : {{i.user}}</h1></div>
+        <div id="ts">Time Start : {{i.book_time}}</div>
+        <div id="te">Movie : {{i.movie}}</div>
+        <div id="sa">Phone Number : {{i.phone}}</div>
+        <div id="sa">Number of Tickets : {{i.nos}}</div>
+    </div>
+    <br>
+    <br>
+    {%endfor%}
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to right,#12c2e9, #c471ed,#f64f59);
+    }
+    #movies{
+        background: rgba(234, 235, 229, 0.1);
+    }
+    #name {
+        color: azure; 
+           }
+
+    #ts{
+        color: white;
+    }
+    #te{
+        color: white;
+    }
+  </style>
+<body bgcolor=skyblue>
+    {% for obj in movies %}
+    {% if obj.bookings %}
+    <div id="movies">
+        <div id="name"><h1>Name : {{obj.name}}</h1></div>
+        <div id="ts">Time Start : {{obj.time_start}}</div>
+        <div id="te">Time End : {{obj.time_end}}</div>
+        <div id="sa">Seats available : {{obj.bookings}}</div>
+        <form action="bookt" method='GET'>
+            <input type="hidden" name="movie" value="{{ obj.name }}" />
+            <input type="hidden" name="booking" value="{{ obj.bookings }}" />
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="phone"placeholder="Phone number">
+            <input type="text" name="nos" placeholder="number of tickets">
+            <button type="submit">Book</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    {%endif%}
+    {%endfor%}
+    <div id="cancel">
+        <a href="{% url 'delete' %}"><button type="button">
+            Cancel Tickets
+        </button></a>
+    </div>
+    <div id="updatetime">
+        <a href="{% url 'updatetime' %}"><button type="button">
+            Update Ticket Timings
+        </button></a>
+    </div>
+    <div id="details">
+        <a href="{% url 'details' %}"><button type="button">
+            View User Details
+        </button></a>
+    </div>
+    <div id="viewticket">
+        <a href="{% url 'viewticket' %}"><button type="button">
+            View Tickets
+        </button></a>
+    </div>
+</body>
+</html>

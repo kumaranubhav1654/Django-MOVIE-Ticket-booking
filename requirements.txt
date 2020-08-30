@@ -1,0 +1,2 @@
+Django==2.2
+Djangorestframework==3.9.2
