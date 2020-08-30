@@ -1,10 +1,17 @@
-Django-MOVIE-Ticket-booking:
+# Django-MOVIE-Ticket-booking:
 Django based web app which implements ticket booking for multiple movies, update ticket and auto delete tickets after fixed time.
 
-Working Screenshots url:
+## Working Screenshots POSTMAN:
+![](Snapshot/Booking.png)
+![](Snapshot/user_info.png)
+![](Snapshot/Tickets.png)
+
+##HOME PAGE of our website:
+![](Snapshot/HOME.png)
 
 
-Installation Pre-requisites:
+
+##Installation Pre-requisites:
 
 django
 djangorestframework
@@ -34,7 +41,7 @@ Always ensure that DB has appropriate entries before you try to book tickets. Ca
 
 
 
-Authors
+Author:
 kumaranubhav1654 - Django-MOVIE-Ticket-booking - kumaranubhav1654
-License
+License:
 This project is licensed under MIT License - see the LICENSE.md file for details.
